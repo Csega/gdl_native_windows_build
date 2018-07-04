@@ -34,6 +34,11 @@ This should find your compiled Editline directory and *should* complain about no
 2. You have to give the following command (and wait a bit) in vcpkg (after pulling vcpkg, and run the .\bootstrap-vcpkg.bat):
 .\vcpkg.exe install pdcurses:x86-windows zlib:x86-windows gsl:x86-windows plplot[core,wxwidgets]:x86-windows graphicsmagick:x86-windows wxwidgets:x86-windows netcdf-c:x86-windows hdf5:x86-windows fftw3:x86-windows proj4:x86-windows eigen3:x86-windows
 
+# Useful links
+
+1. https://sourceforge.net/projects/gnudatalanguage-win32/ (already worked for Windows for GDL version 0.9.6 - a project of pjb7687)
+2. https://github.com/pjb7687/GNU-Data-Language (automated windows build - also a project of pjb7687)
+
 # TODOs
 
 1. GDL CMakeLists.txt: set(CMAKE_PREFIX_PATH ${NCURSESDIR}) --> set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${NCURSESDIR}) etc. --> Done, but it caused some [disagreement](https://github.com/gnudatalanguage/gdl/pull/416) in the development team, so maybe other solutions will be necessary to implement.
